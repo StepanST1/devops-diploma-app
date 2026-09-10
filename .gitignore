@@ -1,0 +1,15 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Editor and OS files
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+
+# Local Docker override files
+compose.override.yaml
+docker-compose.override.yml
