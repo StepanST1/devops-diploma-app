@@ -78,13 +78,6 @@ jobs:
           VM_HOST: ${{ secrets.VM_HOST }}
           VM_USER: ${{ secrets.VM_USER }}
         run: |
-          ssh \
-            -i ~/.ssh/github_actions_deploy \
-            -o IdentitiesOnly=yes \
-            -o StrictHostKeyChecking=yes \
-            "${VM_USER}@${VM_HOST}" \
-            "mkdir -p /opt/devops-diploma-app"
-
           scp \
             -i ~/.ssh/github_actions_deploy \
             -o IdentitiesOnly=yes \
